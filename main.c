@@ -13,7 +13,10 @@ int main() {
 	//amount of heads, tails, and AMOUNT is how many times to flip.
 	int heads = 0;
 	int tails = 0;
-	static int AMOUNT = 50000;
+	int AMOUNT = 0;
+	printf("Enter how many times you would like to flip.\n");
+	scanf_s("%d", &AMOUNT);
+	
 	//make sure there is different seed for random function each time
 	srand(time(0));
 	for (int i = 0; i < AMOUNT; i++) {
